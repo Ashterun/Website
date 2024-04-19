@@ -303,8 +303,8 @@ function getNeighbors(cell)
     let num = Math.sqrt(gridCells.length); 
 
     let cellIndex = Array.from(gridCells).indexOf(cell); 
-    let row = Math.floor(cellIndex / n); 
-    let col = cellIndex % n; 
+    let row = Math.floor(cellIndex / num); 
+    let col = cellIndex % num; 
 
     if (row > 0) neighbors.push(gridCells[cellIndex - num]); 
     if (row < num - 1) neighbors.push(gridCells[cellIndex + num]); 
