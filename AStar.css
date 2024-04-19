@@ -1,0 +1,93 @@
+#grid
+{
+    display: grid;
+    grid-template-columns: repeat(var(--num), 1fr);
+    grid-template-rows: repeat(var(--num), 1fr);
+    width: 700px;
+    height: 700px;
+}
+
+.cell
+{
+    border: 1px solid black;
+}
+
+.blocked 
+{
+    background-color: red;
+}
+
+.start
+{
+    background-color: blue;
+}
+
+.end
+{
+    background-color: green;
+}
+
+.path
+{
+    background-color: blue;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+button
+{
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+button:hover
+{
+    background-color: #45a049;
+}
+
+input
+{
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #ccc;
+}
+
+#homeLink
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+#homeLink:hover
+{
+    background-color: #45a049;
+}
+
+.visited
+{
+    background-color: grey;
+}
+
+#textFrame
+{
+    position: absolute;
+    right: 0;
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    border: 1px solid black;
+}

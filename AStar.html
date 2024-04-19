@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8">
+    <title>A*</title> 
+</head> 
+<body> 
+    <link rel="stylesheet" href="AStar.css"> 
+    <h1>A*</h1>
+    <a href="Главная страница.html" id="homeLink">На главную страницу</a>
+    <div id="grid"></div> 
+    <input type="number" id="mapSize" placeholder="Введите размер карты" value="15"> 
+    <div class="buttonContainer">
+        <button id="createMap">Создать карту</button>
+        <button id="addBlocked">Добавить непроходимую клетку</button>
+        <button id="setStart">Установить начало</button>
+        <button id="setEnd">Установить конец</button>
+        <button id="deleteCell">Удалить клетку</button>
+        <button id="generateMap">Случайная генерация карты</button>
+        <button id="clearMap">Очистить карту</button>
+        <button id="runAStar">Найти путь</button>
+    </div>
+    <div id="textFrame">
+        <p>Это алгоритм A*. Он находит путь из начальной клетки в конечную (синяя клетка - начало, зелёная - конец, красная - препятствие). 
+            Можно созадть лабиринт самому, расставив нужные клетки, или сгенерировать его случайно. 
+            Можно удалить отдельные клетки или даже очистить всё карту. Создайте карту, отредактируйте лабиринт и запустите алгоритм.</p>
+      </div>
+    <script src="AStar.js"></script> 
+</body> 
+</html>
